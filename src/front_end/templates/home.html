@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpartexAI | Enterprise AI Solutions</title>
+    <meta name="description" content="SpartexAI provides cutting-edge AI solutions including LLM integration, RAG chatbots, and secure AI deployments">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home"><span class="logo-text">Spartex</span><span class="logo-ai">AI</span></a>
+            </div>
+            
+            <!-- Theme Switcher -->
+            <div class="theme-switcher">
+                <button class="theme-btn light" data-theme="light" title="Light Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="theme-btn dark" data-theme="dark" title="Dark Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="theme-btn purple" data-theme="purple" title="Purple Theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login" class="login-btn">Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Business with <span>AI Power</span></h1>
+                <p>SpartexAI delivers cutting-edge artificial intelligence solutions tailored to your enterprise needs.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="AI Solutions" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Our <span>Services</span></h2>
+            <p>Comprehensive AI solutions for your business challenges</p>
+        </div>
+        
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>LLM Integration</h3>
+                <p>Seamlessly integrate large language models into your existing systems and workflows.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>RAG-Based Chatbots</h3>
+                <p>Intelligent chatbots powered by retrieval-augmented generation for accurate responses.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Enterprise Search</h3>
+                <p>AI-powered search solutions that understand context and intent.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Copilot Tools</h3>
+                <p>Enhance productivity with AI assistants that work alongside your team.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Secure LLM Deployment</h3>
+                <p>Private and secure deployment of language models within your infrastructure.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="section-header">
+            <h2>Our <span>Team</span></h2>
+            <p>The experts behind SpartexAI's innovative solutions</p>
+        </div>
+        
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Yallaiah Onteru" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Yallaiah Onteru</h3>
+                    <p class="team-title">Generative AI Engineer</p>
+                    <p class="team-bio">Specialized in retrieval-augmented generation (RAG), agent frameworks, and LLM-driven automation.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Hari Babu Chavala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Hari Babu Chavala</h3>
+                    <p class="team-title">Senior Generative AI Engineer</p>
+                    <p class="team-bio">Focuses on prompt engineering, fine-tuning large models, and building real-time AI solutions.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Mahesh Pujala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Mahesh Pujala</h3>
+                    <p class="team-title">Full Stack Engineer</p>
+                    <p class="team-bio">Expert in backend logic, API development, server-side security, and large-scale deployments.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Rayudu Arudhala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Rayudu Arudhala</h3>
+                    <p class="team-title">Frontend Engineer</p>
+                    <p class="team-bio">Specializes in frontend engineering, animation design, and building reusable components.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2>Simple, Transparent <span>Pricing</span></h2>
+            <p>Choose the plan that fits your needs</p>
+        </div>
+        
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <p>For small businesses and startups</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">$999</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Basic LLM Integration</li>
+                    <li><i class="fas fa-check"></i> Standard Chatbot</li>
+                    <li><i class="fas fa-check"></i> Email Support</li>
+                    <li><i class="fas fa-times"></i> Enterprise Search</li>
+                    <li><i class="fas fa-times"></i> AI Copilot</li>
+                    <li><i class="fas fa-times"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Professional</h3>
+                    <p>For growing businesses</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">$2,999</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Advanced LLM Integration</li>
+                    <li><i class="fas fa-check"></i> RAG-Based Chatbot</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                    <li><i class="fas fa-check"></i> Enterprise Search</li>
+                    <li><i class="fas fa-check"></i> Basic AI Copilot</li>
+                    <li><i class="fas fa-times"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <p>For large organizations</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">Custom</span>
+                    <span class="period">Contact Us</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Custom LLM Integration</li>
+                    <li><i class="fas fa-check"></i> Advanced RAG Chatbot</li>
+                    <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+                    <li><i class="fas fa-check"></i> Enterprise Search</li>
+                    <li><i class="fas fa-check"></i> Advanced AI Copilot</li>
+                    <li><i class="fas fa-check"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Ready to transform your business with AI?</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Office</h3>
+                        <p>123 AI Innovation Drive, Tech Park</p>
+                        <p>San Francisco, CA 94107</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>info@spartexai.com</p>
+                        <p>support@spartexai.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Mon-Fri: 9am-6pm PST</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <a href="#home"><span class="logo-text">Spartex</span><span class="logo-ai">AI</span></a>
+                </div>
+                <p>Empowering businesses with cutting-edge AI solutions since 2023.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">LLM Integration</a></li>
+                    <li><a href="#">RAG-Based Chatbots</a></li>
+                    <li><a href="#">Enterprise Search</a></li>
+                    <li><a href="#">AI Copilot Tools</a></li>
+                    <li><a href="#">Secure LLM Deployment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 SpartexAI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chatbot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h3>SpartexAI Assistant</h3>
+                <span class="close-chatbot">&times;</span>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message">
+                    <p>Hello! I'm your SpartexAI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpartexAI | Enterprise AI Solutions</title>
+    <meta name="description" content="SpartexAI provides cutting-edge AI solutions including LLM integration, RAG chatbots, and secure AI deployments">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home"><span class="logo-text">Spartex</span><span class="logo-ai">AI</span></a>
+            </div>
+            
+            <!-- Theme Switcher -->
+            <div class="theme-switcher">
+                <button class="theme-btn light" data-theme="light" title="Light Theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="theme-btn dark" data-theme="dark" title="Dark Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="theme-btn purple" data-theme="purple" title="Purple Theme">
+                    <i class="fas fa-palette"></i>
+                </button>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login" class="login-btn">Login</a></li>
+                </ul>
+            </div>
+            
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Business with <span>AI Power</span></h1>
+                <p>SpartexAI delivers cutting-edge artificial intelligence solutions tailored to your enterprise needs.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="AI Solutions" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <h2>Our <span>Services</span></h2>
+            <p>Comprehensive AI solutions for your business challenges</p>
+        </div>
+        
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>LLM Integration</h3>
+                <p>Seamlessly integrate large language models into your existing systems and workflows.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>RAG-Based Chatbots</h3>
+                <p>Intelligent chatbots powered by retrieval-augmented generation for accurate responses.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Enterprise Search</h3>
+                <p>AI-powered search solutions that understand context and intent.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI Copilot Tools</h3>
+                <p>Enhance productivity with AI assistants that work alongside your team.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Secure LLM Deployment</h3>
+                <p>Private and secure deployment of language models within your infrastructure.</p>
+                <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+        <div class="section-header">
+            <h2>Our <span>Team</span></h2>
+            <p>The experts behind SpartexAI's innovative solutions</p>
+        </div>
+        
+        <div class="team-container">
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Yallaiah Onteru" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Yallaiah Onteru</h3>
+                    <p class="team-title">Generative AI Engineer</p>
+                    <p class="team-bio">Specialized in retrieval-augmented generation (RAG), agent frameworks, and LLM-driven automation.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Hari Babu Chavala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Hari Babu Chavala</h3>
+                    <p class="team-title">Senior Generative AI Engineer</p>
+                    <p class="team-bio">Focuses on prompt engineering, fine-tuning large models, and building real-time AI solutions.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Mahesh Pujala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Mahesh Pujala</h3>
+                    <p class="team-title">Full Stack Engineer</p>
+                    <p class="team-bio">Expert in backend logic, API development, server-side security, and large-scale deployments.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://via.placeholder.com/300x300" alt="Rayudu Arudhala" class="oval-image">
+                </div>
+                <div class="team-content">
+                    <h3>Rayudu Arudhala</h3>
+                    <p class="team-title">Frontend Engineer</p>
+                    <p class="team-bio">Specializes in frontend engineering, animation design, and building reusable components.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <h2>Simple, Transparent <span>Pricing</span></h2>
+            <p>Choose the plan that fits your needs</p>
+        </div>
+        
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Starter</h3>
+                    <p>For small businesses and startups</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">$999</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Basic LLM Integration</li>
+                    <li><i class="fas fa-check"></i> Standard Chatbot</li>
+                    <li><i class="fas fa-check"></i> Email Support</li>
+                    <li><i class="fas fa-times"></i> Enterprise Search</li>
+                    <li><i class="fas fa-times"></i> AI Copilot</li>
+                    <li><i class="fas fa-times"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Professional</h3>
+                    <p>For growing businesses</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">$2,999</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Advanced LLM Integration</li>
+                    <li><i class="fas fa-check"></i> RAG-Based Chatbot</li>
+                    <li><i class="fas fa-check"></i> Priority Support</li>
+                    <li><i class="fas fa-check"></i> Enterprise Search</li>
+                    <li><i class="fas fa-check"></i> Basic AI Copilot</li>
+                    <li><i class="fas fa-times"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3>Enterprise</h3>
+                    <p>For large organizations</p>
+                </div>
+                <div class="pricing-price">
+                    <span class="price">Custom</span>
+                    <span class="period">Contact Us</span>
+                </div>
+                <ul class="pricing-features">
+                    <li><i class="fas fa-check"></i> Custom LLM Integration</li>
+                    <li><i class="fas fa-check"></i> Advanced RAG Chatbot</li>
+                    <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
+                    <li><i class="fas fa-check"></i> Enterprise Search</li>
+                    <li><i class="fas fa-check"></i> Advanced AI Copilot</li>
+                    <li><i class="fas fa-check"></i> Private Deployment</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Get In <span>Touch</span></h2>
+            <p>Ready to transform your business with AI?</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Our Office</h3>
+                        <p>123 AI Innovation Drive, Tech Park</p>
+                        <p>San Francisco, CA 94107</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p>info@spartexai.com</p>
+                        <p>support@spartexai.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p>Mon-Fri: 9am-6pm PST</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <a href="#home"><span class="logo-text">Spartex</span><span class="logo-ai">AI</span></a>
+                </div>
+                <p>Empowering businesses with cutting-edge AI solutions since 2023.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">LLM Integration</a></li>
+                    <li><a href="#">RAG-Based Chatbots</a></li>
+                    <li><a href="#">Enterprise Search</a></li>
+                    <li><a href="#">AI Copilot Tools</a></li>
+                    <li><a href="#">Secure LLM Deployment</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 SpartexAI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget">
+        <div class="chatbot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chatbot-header">
+                <h3>SpartexAI Assistant</h3>
+                <span class="close-chatbot">&times;</span>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message">
+                    <p>Hello! I'm your SpartexAI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+</body>
+</html>
